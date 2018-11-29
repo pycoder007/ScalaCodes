@@ -8,8 +8,8 @@ def decToBin(inputValue: Int){
 
   while (input > 0)
   {
-    val reminder = input/2
-    val quotient = input%2
+    val reminder = x/2
+    val quotient = x%2
     input = reminder
     resultantString=quotient+resultantString
 
@@ -21,3 +21,18 @@ def decToBin(inputValue: Int){
 decToBin(12)
 
 
+
+
+------
+"""Same decimal to binary conversion with Array Example"""
+var i = 76
+var opArray = Array[Int]()
+
+while (i > 0) {
+  var rem = i / 2
+  var quo = i % 2
+  opArray= opArray:+quo
+  i = rem
+
+}
+ opArray.mkString.reverse
