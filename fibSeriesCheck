@@ -1,0 +1,26 @@
+def isFibSeries(valueToCheck:Int): Boolean = {
+
+
+  val input = valueToCheck
+  var i = 1
+  var prev_value = 0
+  var fibArray = Array[Int](0)
+  var cur_value = 0
+
+  do {
+
+    cur_value = prev_value + i
+    fibArray = fibArray :+ cur_value
+    i = prev_value
+    prev_value = cur_value
+
+
+  } while (cur_value <= input)
+
+  
+  fibArray.contains(input)
+
+}
+
+
+isFibSeries(144)
