@@ -1,4 +1,4 @@
-Scala program to convert decimal to binary:
+//Scala program to convert decimal to binary:
 
 def decToBin(inputValue: Int){
   
@@ -24,7 +24,8 @@ decToBin(12)
 
 
 ------
-"""Same decimal to binary conversion with Array Example"""
+//Same decimal to binary conversion with Array Example
+
 var i = 76
 var opArray = Array[Int]()
 
