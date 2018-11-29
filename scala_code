@@ -1,0 +1,23 @@
+Scala program to convert decimal to binary:
+
+def decToBin(inputValue: Int){
+  
+  var input =inputValue
+
+  var resultantString =""
+
+  while (input > 0)
+  {
+    val reminder = input/2
+    val quotient = input%2
+    input = reminder
+    resultantString=quotient+resultantString
+
+  }
+  println(resultantString)
+}
+
+
+decToBin(12)
+
+
