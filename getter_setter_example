@@ -1,0 +1,9 @@
+class Circle(radius:Int) {
+  var _radius:Double= 0
+  def calculateArea:Double = Pi*pow(radius,2)
+  //getter
+  def radius:Double = _radius
+  //setter
+  def radius_=(rad:Int) = if(rad < 0 ) println("Invalid") else _radius = rad
+  def setRadius(rad:Int):Unit = _radius = rad
+}
