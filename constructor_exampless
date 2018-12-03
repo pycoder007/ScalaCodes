@@ -1,0 +1,22 @@
+class cube(length: Double, width: Double, height: Double){
+  
+  //Default constructor
+  def this(){
+    this(1,1,1)
+  }
+  
+  //Auxilary constructor
+  def this(l: Double, w: Double){
+        this(l,w,1)
+  }
+  def calculateVolume(): Double ={
+    length*width*height
+  }
+}
+
+val cube = new cube()
+cube.calculateVolume()
+val cube2 = new cube(1,2)
+cube2.calculateVolume()
+val cube3 = new cube(1,2,3)
+cube3.calculateVolume()
