@@ -1,0 +1,17 @@
+
+var opStr =""
+var i:Int = 0
+
+def strReverse(inStr: String) {
+
+for( i <- inStr.length-1 to 0 by -1){
+
+  opStr = opStr+inStr(i)
+}
+
+  println(opStr)
+
+}
+
+strReverse("Hello world")
+
