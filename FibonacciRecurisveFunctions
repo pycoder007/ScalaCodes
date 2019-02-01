@@ -1,6 +1,6 @@
-def FibonacciSeries(n: Int): Int = {
+def FibonacciSeries(n: Int): Int = 
     if (n <= 2) 1
     else FibonacciSeries(n-1)+FibonacciSeries(n-2)
-  }
+  
 
   println(FibonacciSeries(8))
